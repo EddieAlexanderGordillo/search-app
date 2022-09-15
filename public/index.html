@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search APP</title>
+    <link rel="stylesheet" href="../src/style/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>BUSCADOR DE AUTOS</h1>
+      <div class="container">
+        <form id="searcher" class="container__form">
+          <div class="select1">
+            <div class="container__option">
+              <label for="brand">Marca</label>
+              <select class="select" id="brand">
+                <option value="Seleccione">Seleccione</option>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes Benz">Mercedes Benz</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Ford">Ford</option>
+                <option value="Dodge">Dodge</option>
+              </select>
+            </div>
+            <div class="container__option">
+              <label for="year">Año</label>
+              <select class="select" id="year">
+                <option value="">Seleccione</option>
+                <!-- <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option> -->
+              </select>
+            </div>
+            <div class="container__option">
+              <label for="minimum">Precio Min</label>
+              <select class="select" id="minimum">
+                <option value="">Seleccione</option>
+                <option value="20000">20,000</option>
+                <option value="30000">30,000</option>
+                <option value="40000">40,000</option>
+                <option value="50000">50,000</option>
+                <option value="60000">60,000</option>
+                <option value="70000">70,000</option>
+              </select>
+            </div>
+            <div class="container__option">
+              <label for="maximum">Precio Max</label>
+              <select class="select" id="maximum">
+                <option value="">Seleccione</option>
+                <option value="20000">20,000</option>
+                <option value="30000">30,000</option>
+                <option value="40000">40,000</option>
+                <option value="50000">50,000</option>
+                <option value="60000">60,000</option>
+                <option value="70000">70,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="select2">
+            <div class="container__option">
+              <label for="doors">Puertas</label>
+              <select class="select" id="doors">
+                <option value="">Seleccione</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="container__option">
+              <label for="transmission">Transmisión</label>
+              <select class="select" id="transmission">
+                <option value="">Seleccione</option>
+                <option value="automatico">Automática</option>
+                <option value="manual">Manual</option>
+              </select>
+            </div>
+            <div class="container__option">
+              <label for="color">Color</label>
+              <select class="select" id="color">
+                <option value="">Seleccione</option>
+                <option value="Negro">Negro</option>
+                <option value="Azul">Azul</option>
+                <option value="Blanco">Blanco</option>
+                <option value="Rojo">Rojo</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <h2>Resultados</h2>
+        <div id="result"></div>
+      </div>
+    </main>
+    <script src="../src/db.js"></script>
+    <script src="../src/index.js"></script>
+  </body>
+</html>
